@@ -1,9 +1,10 @@
-import jsPDF from "jspdf";
+import { jsPDF } from "jspdf";  // <-- aqui, desestruturando o jsPDF
 import html2canvas from "html2canvas";
-
 
 export function gerarPDF(orcamentos) {
   try {
+    console.log('jsPDF:', jsPDF);  // para debugar
+
     const doc = new jsPDF();
     doc.setFontSize(18);
     doc.text("Big Refrigeração - Orçamentos", 20, 20);
@@ -36,6 +37,7 @@ export function gerarPDF(orcamentos) {
   } catch (e) {
     console.error("Erro ao gerar PDF:", e);
   }
+  console.log("clicou no botão");
 }
 
 function formatarData(dataStr) {
