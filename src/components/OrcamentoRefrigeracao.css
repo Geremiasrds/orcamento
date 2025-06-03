@@ -1,0 +1,202 @@
+/* Container geral */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  /* cor de fundo suave */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Subtítulo “Orçamentos Salvos” */
+.subtitulo {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Estilização geral para inputs */
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Se quiser um espaçamento extra em inputs específicos */
+.campo-cliente {
+  margin-top: 10px;
+}
+
+.campo-data {
+  margin-bottom: 20px;
+}
+
+
+
+/* Botões gerais */
+.btn {
+  /* padding: 10px 16px; */
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* margin-right: 8px;
+  margin-top: 10px; */
+}
+
+.btn-remover-servico {
+  background-color: #f82c07;
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  width: 50px;
+
+}
+
+.btn-editar-servico {
+  background-color: #141814;
+  color: chartreuse;
+  font-size: 10px;
+  width: 50px;
+  margin: 0 0 0 100px
+}
+
+/* Botão “Adicionar Serviço” com cor personalizada */
+.adicionar-servico {
+  background-color: #2a9d8f;
+  color: #fff;
+}
+
+.adicionar-servico:hover {
+  background-color: #27877a;
+}
+
+/* Botão “Finalizar Orçamento” */
+.finalizar-orcamento {
+  background-color: #264653;
+  color: #fff;
+}
+
+.finalizar-orcamento:hover {
+  background-color: #213443;
+}
+
+/* Botões dentro da lista de orçamentos */
+.botoes-orcamento {
+  margin-top: 10px;
+}
+
+/* Botão “Excluir” */
+.btn-excluir {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.btn-excluir:hover {
+  background-color: #c92e37;
+}
+
+/* Botão “Editar” */
+.btn-editar {
+  background-color: #f4a261;
+  color: #fff;
+}
+
+.btn-editar:hover {
+  background-color: #d48b4d;
+}
+
+/* Botão “Gerar PDF” */
+.gerar-pdf {
+  background-color: #556b2f;
+  color: #fff;
+}
+
+.gerar-pdf:hover {
+  background-color: #485f29;
+}
+
+/* Lista de serviços que ainda estão sendo adicionados */
+.lista-servicos {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+  color: yellowgreen;
+}
+
+.item-servico {
+  background-color: #fff;
+  padding: 5px 12px;
+  border-bottom: 1px solid black;
+}
+
+/* Parágrafo de Total Parcial */
+.total-parcial {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  color: #2f4f4f;
+}
+
+/* Lista de orçamentos salvos */
+.lista-orcamentos {
+  list-style: none;
+  padding-left: 0;
+  color: olivedrab;
+}
+
+.item-orcamento {
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Container dos dados de cada orçamento */
+.dados-orcamento {
+  margin-bottom: 10px;
+}
+
+/* Cada serviço listado dentro de um orçamento salvo */
+.servico-listagem {
+  margin-left: 10px;
+  font-style: italic;
+  color: #0c0c0c;
+}
+
+/* Mensagem quando não há orçamentos salvos */
+.texto-vazio {
+  color: #888;
+  font-style: italic;
+}
+
+/* Estilo para a mensagem de erro */
+.error {
+  color: #f7071b;
+  /* Vermelho forte */
+  background-color: #ffe5e5;
+  /* Fundo rosado bem clarinho */
+  padding: 8px 12px;
+  /* Espaçamento interno */
+  border-radius: 4px;
+  /* Canto arredondado */
+  font-weight: bold;
+  /* Negrito */
+  margin-bottom: 15px;
+  /* Espaço embaixo, antes dos inputs */
+}
