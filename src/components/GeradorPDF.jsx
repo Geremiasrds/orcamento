@@ -1,13 +1,7 @@
 import { jsPDF } from "jspdf";
-import html2canvas from "html2canvas";
-
-
-
 
 export function gerarPDF(orcamentos) {
   try {
-    console.log('jsPDF:', jsPDF);
-
     const doc = new jsPDF();
     doc.setFontSize(18);
     doc.text("Big Refrigeração - Orçamentos", 20, 20);
@@ -34,13 +28,18 @@ export function gerarPDF(orcamentos) {
       );
 
       y += 50 + orcamento.servicos.length * 10;
+
+      // Evita ultrapassar a página
+      if (y > 270) {
+        doc.addPage();
+        y = 20;
+      }
     });
 
     doc.save("orcamento_big_refrigeracao.pdf");
   } catch (e) {
     console.error("Erro ao gerar PDF:", e);
   }
-  console.log("clicou no botão");
 }
 
 function formatarData(dataStr) {
